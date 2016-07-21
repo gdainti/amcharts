@@ -1,0 +1,23 @@
+@mixin calendar-heading-gradient {
+  background: -webkit-linear-gradient(top, rgb(56, 181, 209) 0%, rgb(21, 142, 180) 100%);
+  background: -o-linear-gradient(top, rgb(56, 181, 209) 0%, rgb(21, 142, 180) 100%);
+  background: -ms-linear-gradient(top, rgb(56, 181, 209) 0%, rgb(21, 142, 180) 100%);
+  background: -moz-linear-gradient(top, rgb(56, 181, 209) 0%, rgb(21, 142, 180) 100%);
+  background: linear-gradient(to bottom, rgb(56, 181, 209) 0%, rgb(21, 142, 180) 100%);
+}
+
+@mixin row-heading-gradient {
+  background: -webkit-linear-gradient(top, rgb(10, 94, 119) 0%, rgb(18, 116, 140) 100%);
+  background: -o-linear-gradient(top, rgb(10, 94, 119) 0%, rgb(18, 116, 140) 100%);
+  background: -ms-linear-gradient(top, rgb(10, 94, 119) 0%, rgb(18, 116, 140) 100%);
+  background: -moz-linear-gradient(top, rgb(10, 94, 119) 0%, rgb(18, 116, 140) 100%);
+  background: linear-gradient(to bottom, rgb(10, 94, 119) 0%, rgb(18, 116, 140) 100%);
+}
+
+@mixin current-gradient {
+  background: -webkit-linear-gradient(top, rgb(42, 124, 105) 0%, rgb(66, 157, 138) 100%);
+  background: -o-linear-gradient(top, rgb(42, 124, 105) 0%, rgb(66, 157, 138) 100%);
+  background: -ms-linear-gradient(top, rgb(42, 124, 105) 0%, rgb(66, 157, 138) 100%);
+  background: -moz-linear-gradient(top, rgb(42, 124, 105) 0%, rgb(66, 157, 138) 100%);
+  background: linear-gradient(to bottom, rgb(42, 124, 105) 0%, rgb(66, 157, 138) 100%);
+}

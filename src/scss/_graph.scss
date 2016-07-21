@@ -1,0 +1,14 @@
+.graph {
+  padding: 50px;
+
+  &__item {
+    height: 500px;
+    width: 500px;
+    float: left;
+  }
+
+  &__item + &__item {
+    padding-left: 50px;
+  }
+
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Gulp-frontend",
+  "version": "0.0.1",
+  "description": "Gulp boilerplate",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "grunt-concat-css": "^0.3.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "gulp-dest": "^0.2.3",
+    "imagemin": "^4.0.0"
+  }
+}

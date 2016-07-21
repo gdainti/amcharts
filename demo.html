@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>graphs</title>
+    <meta name="description" content="graphs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="g-wrapper">
+
+    <div class="calendar-wrapper">
+        <div class="calendar">
+            <div class="calendar__heading">
+                <a href="#" class="calendar__arrow calendar__arrow--left"></a>
+                <a href="#" class="calendar__arrow calendar__arrow--right"></a>
+                <div class="calendar__date">June 2012</div>
+            </div>
+            <table class="calendar__grid">
+                <thead>
+                <tr class="calendar__row calendar__row--heading">
+                    <th class="calendar__cell calendar__cell--heading">Sun</th>
+                    <th class="calendar__cell calendar__cell--heading">Mon</th>
+                    <th class="calendar__cell calendar__cell--heading">Tue</th>
+                    <th class="calendar__cell calendar__cell--heading">Wed</th>
+                    <th class="calendar__cell calendar__cell--heading">Thu</th>
+                    <th class="calendar__cell calendar__cell--heading">Fri</th>
+                    <th class="calendar__cell calendar__cell--heading">Sat</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="calendar__row calendar__row--first">
+                    <td class="calendar__cell calendar__cell--off">27</td>
+                    <td class="calendar__cell calendar__cell--off">28</td>
+                    <td class="calendar__cell calendar__cell--off">29</td>
+                    <td class="calendar__cell calendar__cell--off">30</td>
+                    <td class="calendar__cell calendar__cell--off">31</td>
+                    <td class="calendar__cell">1</td>
+                    <td class="calendar__cell">2</td>
+                </tr>
+                <tr class="calendar__row">
+                    <td class="calendar__cell">3</td>
+                    <td class="calendar__cell">4</td>
+                    <td class="calendar__cell">5</td>
+                    <td class="calendar__cell">6</td>
+                    <td class="calendar__cell">7</td>
+                    <td class="calendar__cell">8</td>
+                    <td class="calendar__cell">9</td>
+                </tr>
+                <tr class="calendar__row">
+                    <td class="calendar__cell">10</td>
+                    <td class="calendar__cell">11</td>
+                    <td class="calendar__cell">12</td>
+                    <td class="calendar__cell calendar__cell--current">13</td>
+                    <td class="calendar__cell">14</td>
+                    <td class="calendar__cell">15</td>
+                    <td class="calendar__cell">16</td>
+                </tr>
+                <tr class="calendar__row">
+                    <td class="calendar__cell" >17</td>
+                    <td class="calendar__cell" >18</td>
+                    <td class="calendar__cell" >19</td>
+                    <td class="calendar__cell" >20</td>
+                    <td class="calendar__cell" >21</td>
+                    <td class="calendar__cell" >22</td>
+                    <td class="calendar__cell" >23</td>
+                </tr>
+                <tr class="calendar__row">
+                    <td class="calendar__cell">24</td>
+                    <td class="calendar__cell">25</td>
+                    <td class="calendar__cell">26</td>
+                    <td class="calendar__cell">27</td>
+                    <td class="calendar__cell">28</td>
+                    <td class="calendar__cell">29</td>
+                    <td class="calendar__cell">30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> <!--/.calendar-wrapper-->
+
+    <div class="clear"></div>
+
+    <div class="graph">
+        <div id="graph1" class="graph graph__item"></div>
+        <div id="graph2" class="graph graph__item" style="display: none"></div>
+    </div> <!--/.graph-->
+
+</div> <!--/.g-wrapper-->
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/amcharts/dist/amcharts/amcharts.js"></script>
+<script type="text/javascript" src="bower_components/amcharts/dist/amcharts/serial.js"></script>
+<script type="text/javascript" src="bower_components/amcharts/dist/amcharts/themes/light.js"></script>
+
+<!-- json for local demo file -->
+<script type="application/json" id="graphData">
+    {
+        "graph1" : [
+            {"value": 23, "date": 2007},
+            {"value": 28, "date": 2012},
+            {"value": 155, "date": 2013},
+            {"value": 35, "date": 2006},
+            {"value": 77, "date": 1990},
+            {"value": 11, "date": 2036},
+            {"value": 23, "date": 2016},
+            {"value": 122, "date": 2044},
+            {"value": 55, "date": 2002}
+        ],
+        "graph2": [
+            {"date": 2002, "code": 1, "description": "string1"},
+            {"date": 2007, "code": 2, "description": "string2"},
+            {"date": 2036, "code": 3, "description": "string3"},
+            {"date": 2044, "code": 4, "description": "string4"},
+            {"date": 2002, "code": 5, "description": "string5"},
+            {"date": 2002, "code": 6, "description": "string6"},
+            {"date": 2002, "code": 7, "description": "string7"},
+            {"date": 2013, "code": 8, "description": "string8"},
+            {"date": 2012, "code": 9, "description": "string9"},
+            {"date": 1990, "code": 10, "description": "string10"},
+            {"date": 2002, "code": 11, "description": "string11"},
+            {"date": 2036, "code": 12, "description": "string12"},
+            {"date": 2002, "code": 13, "description": "string13"},
+            {"date": 2002, "code": 14, "description": "string14"},
+            {"date": 1990, "code": 15, "description": "string15"},
+            {"date": 2002, "code": 16, "description": "string16"},
+            {"date": 2012, "code": 17, "description": "string17"},
+            {"date": 2002, "code": 18, "description": "string18"},
+            {"date": 1990, "code": 19, "description": "string19"},
+            {"date": 2002, "code": 20, "description": "string20"},
+            {"date": 2016, "code": 21, "description": "string21"},
+            {"date": 2016, "code": 22, "description": "string22"},
+            {"date": 2016, "code": 23, "description": "string23"},
+            {"date": 2002, "code": 24, "description": "string24"},
+            {"date": 2044, "code": 25, "description": "string25"},
+            {"date": 2002, "code": 26, "description": "string26"},
+            {"date": 2002, "code": 27, "description": "string27"},
+            {"date": 2002, "code": 28, "description": "string28"},
+            {"date": 2002, "code": 29, "description": "string29"},
+            {"date": 2002, "code": 30, "description": "string30"},
+            {"date": 2032, "code": 31, "description": "string31"},
+            {"date": 2008, "code": 32, "description": "string32"},
+            {"date": 2019, "code": 33, "description": "string33"},
+            {"date": 2004, "code": 34, "description": "string34"},
+            {"date": 2002, "code": 35, "description": "string35"}
+        ]
+    }
+</script>
+
+<script type="text/javascript" src="js/script.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "rivasense",
+  "authors": [
+    "Denis Golov <golovd@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amcharts": "^3.15.2",
+    "jquery": "~3.1.0"
+  }
+}
