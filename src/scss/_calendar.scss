@@ -151,6 +151,8 @@ $c-arrow-darken: #1886a6;
     }
 
     &--off {
+      position: static;
+      
       color: $c-cell-off;
       background-color: $c-cell-off-bg;
       text-shadow: 0px -1px 0 rgba(0,0,0,0.2);
